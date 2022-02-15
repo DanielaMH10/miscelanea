@@ -12,15 +12,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>Tienda</title>
-</head>
-<style>
-.navbar{
-    padding: 15px;
-    margin: 15px;
-    border-radius: 8px;
-}
-</style>
+    
+    <style>
+        .navbar{
+            padding: 15px;
+            margin: 15px;
+            border-radius: 8px;
+        }
 
+</style>
+</head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <a class="navbar-brand" href="index.php">Miscelanea</a>
@@ -30,12 +31,15 @@
     <div id="my-nav" class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="index.php">Productos</span></a>
+                <a class="nav-link" href="inicio.php">Productos</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="mostrarcarrito.php">Carrito(<?php 
                     echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']);
                 ?>)</a>
+            </li>
+            <li class="cerrar-sesion">
+            <a  href="app/model/logout.php" class="nav-link">Cerrar sesion</a>
             </li>
         </ul>
     </div>

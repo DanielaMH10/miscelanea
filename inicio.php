@@ -50,8 +50,8 @@ $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
             <button class="btn btn-primary" 
             name="btnAccion" 
             value="Agregar"
-             type="submit"
-             style="float: right;">
+            type="submit"
+            style="float: right;">
             agregar al carrito
             
             </button>

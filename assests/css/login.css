@@ -124,9 +124,7 @@ input.btn[type="submit"]:hover {
     color: rgb(227, 109, 30);
     text-decoration: none;
 }
-.cerrar-sesion{
-    float: right;
-}
+
 h2{
     color: #1E69E3;
 }
