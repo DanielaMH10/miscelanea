@@ -1,0 +1,140 @@
+body{
+    width: 960px;
+    margin: 15px auto;
+    text-align: left;
+}
+body {
+    background: url("../img/f03.jpeg") no-repeat center top;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+/**{
+    display: inline-block;
+}*/
+.imageborder {
+    border-radius: 5px;
+}
+#imagen{
+    width: 50px; 
+    height: 50px;
+    top: 200px; /*largo*/
+    left: 220px;/*ancho*/
+    position: absolute;
+}
+
+#formulario {
+    width: 400px; 
+    height: 400px;
+    top: 200px;
+    left: 680px;
+    position: absolute;
+    text-align: center;
+}
+
+/*#main{
+    background-color: white;
+    margin: 0 auto;
+    width: 1000px;
+    height: 800px;
+    padding: 20px;
+}   */
+
+form{
+    /*background-color: rgb(231, 33, 33);*/
+    margin: 0 auto;
+    padding: 20px;
+}
+
+input{
+    border: solid 0;
+    border-radius: 16px;
+    
+}
+
+input[type=text], input[type=password]{
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    width: 300px; 
+    border: 1px solid #ccc;
+    
+}
+input[type=submit]{
+    background-color: #1E69E3;
+    color: white;
+    padding: 8px;
+    margin: 10px;
+    width: 100px; 
+    cursor:pointer;
+}
+input[type=button]{
+    background-color: white;
+    color: rgb(22, 22, 22);
+    padding: 8px;
+    border: none;
+    width: 100px;
+    border: 1px solid #1E69E3;
+    cursor:pointer;
+}
+input.btn[type="submit"]:hover {
+    border: 1px solid black;
+}
+.center{
+    text-align: center;
+}
+
+.opcion{
+    padding: 5px 0;
+}
+
+.barra{
+    background-color:rgb(152, 196, 236);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.seleccionado{
+    background-color: rgb(33, 90, 143);
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+}
+
+#menu{
+    background-color: #eee;
+    padding: 10px;
+}
+#menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+}
+#menu ul li{
+    display: inline;
+}
+#menu ul li a{
+    color: #1E69E3;
+    text-decoration: none;
+}
+#menu ul li a:hover{
+    color: rgb(227, 109, 30);
+    text-decoration: none;
+}
+.cerrar-sesion{
+    float: right;
+}
+h2{
+    color: #1E69E3;
+}
+h3{
+    color: rgb(127, 204, 255);
+}
+#pie{
+    text-align: center;
+    color: #c5c7ca;
+    font-size: 12;
+}
