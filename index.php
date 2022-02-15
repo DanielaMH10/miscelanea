@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <title>Login</title>
-</head>
-<body>
+
 <?php
 require_once 'app/model/user.php';
 include_once 'app/controller/user_session.php';
@@ -33,16 +24,16 @@ if(isset($_SESSION['user'])){
         include_once 'inicio.php';
     }else{
         //echo "nombre de usuario y/o password incorrecto";
-        echo ("<script>swal('Error','Nombre de usuario y/o password es incorrecto','error')</script>");
-        //echo $errorLogin;
+        $errorLogin = "<script>swal('Error','Nombre de usuario y/o password es incorrecto','error')</script>";
         include_once 'app/view/login.php';
-    }
+         echo $errorLogin;
+        
+    } 
 }else{
     //echo "Login";
     include_once 'app/view/login.php';
 }
 ?>
 
-</body>
-</html>
+
 
