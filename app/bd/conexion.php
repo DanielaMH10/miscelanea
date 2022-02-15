@@ -1,33 +1,14 @@
 <?php
-    class DB{
-        private $host;
-        private $db;
-        private $user;
-        private $password;
-        private $charset;
-    
-        public function __construct(){
-            $this->host       = 'localhost';
-            $this->db         = 'miscelanea';
-            $this->user       = 'root';
-            $this->password   = '';
-            $this->charset    = 'utf8mb4';
-        }
-        public function connect(){
-            try{
-                $connection = "mysql:host=". $this->host . ";dbname=" . $this->db . ";charset=" . $this->charset;
+$servidor="mysql:dbname=".bd.";host=".servidor;
 
-                $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                            PDO::ATTR_EMULATE_PREPARES => false];
-                $pdo = new PDO($connection, $this->user, $this->password, $options);
-
-                return $pdo; 
-            }catch(PDOException $e){
-                print_r("Error connection: " . $e->getMessage());
-            }
-        }
-    }
-
+try {
+    $pdo= new PDO($servidor,usuario,password,
+                array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET NAMES utf8")
+            );
+//echo" <script>alert('Conectado')</script>";
+} catch (PDOException $e) {
+    //echo" <script>alert('Error')</script>";
+}
 
 
 ?>

@@ -1,5 +1,5 @@
 <?php
-include_once 'app/bd/conexion.php';
+include_once 'app/bd/cone.php';
 class User extends DB{
     private $nombres;
     private $username;
