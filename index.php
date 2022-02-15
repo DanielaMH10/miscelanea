@@ -24,9 +24,8 @@ if(isset($_SESSION['user'])){
         include_once 'inicio.php';
     }else{
         //echo "nombre de usuario y/o password incorrecto";
-        $errorLogin = "<script>swal('Error','Nombre de usuario y/o password es incorrecto','error')</script>";
+        $errorLogin = "<div class='alert alert-danger alert-dismissible fade show' role='alert'><strong>Error!</strong> Usuario y/o clave incorrectas.</div>";
         include_once 'app/view/login.php';
-         echo $errorLogin;
         
     } 
 }else{
