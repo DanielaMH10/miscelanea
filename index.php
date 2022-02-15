@@ -1,4 +1,3 @@
-
 <?php
 require_once 'app/model/user.php';
 include_once 'app/controller/user_session.php';
@@ -24,7 +23,11 @@ if(isset($_SESSION['user'])){
         include_once 'inicio.php';
     }else{
         //echo "nombre de usuario y/o password incorrecto";
-        $errorLogin = "<div class='alert alert-danger alert-dismissible fade show' role='alert'><strong>Error!</strong> Usuario y/o clave incorrectas.</div>";
+        $errorLogin = '	<form id="box" action="index.php">
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert"> <h3>¡ERROR!</h3><hr>Debe de llenar todos los campos <button type="submit"  class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                        </div>
+                        </form>';
         include_once 'app/view/login.php';
         
     } 

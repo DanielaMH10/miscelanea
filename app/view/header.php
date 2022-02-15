@@ -38,9 +38,13 @@
                     echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']);
                 ?>)</a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="app/view/listar_productos.php">Proveedor</span></a>
+            </li>
             <li class="cerrar-sesion">
             <a  href="app/model/logout.php" class="nav-link">Cerrar sesion</a>
             </li>
+            
         </ul>
     </div>
 </nav>
