@@ -24,27 +24,23 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-    <a class="navbar-brand" href="http://localhost/miscelanea/">Miscelanea</a>
+    <a class="navbar-brand" href="index.php">Miscelanea</a>
     <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div id="my-nav" class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="http://localhost/miscelanea/">Productos</span></a>
+                <a class="nav-link" href="index.php">Productos</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="http://localhost/miscelanea/app/view/mostrarcarrito.php">Carrito(<?php 
+                <a class="nav-link " href="mostrarcarrito.php">Carrito(<?php 
                     echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']);
                 ?>)</a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="http://localhost/miscelanea/app/view/listar_productos.php">Proveedor</span></a>
-            </li>
             <li class="cerrar-sesion">
-            <a  href="../model/logout.php" class="nav-link">Cerrar sesion</a>
+            <a  href="app/model/logout.php" class="nav-link">Cerrar sesion</a>
             </li>
-            
         </ul>
     </div>
 </nav>
