@@ -14,7 +14,7 @@
 	//Verificamos la presencia del codigo esperado
 	if ( isset($_POST["nomp"] , $_POST["id"], $_POST["tel"],$_POST["dir"])){
 		if ($con = conectarBase($host, $usuario, $clave, $base)) {
-			@mysqli_query($con,"SET NAMES 'UTF-8'");
+			$mysqli_query($con,"SET NAMES 'UTF-8'");
 			// tarspasamos las variables locales
 			$codigo =$_POST["usecode"];
 			$nombre = $_POST["nomp"];

@@ -64,7 +64,7 @@ function tabular($datos){
 
 	}
 	$codigo .= '</table>';
-	$codigo .= '<a href="../reporte/index3.php"><input id="btn-abrir-popup" class="btn btn-dark" type="button" value="Descarga PDF"></a>';
+	$codigo .= '<a href="../rep/index3.php"><input id="btn-abrir-popup" class="btn btn-dark" type="button" value="Descarga PDF"></a>';
     $codigo .= '</div>';    
 	return $codigo;
 }

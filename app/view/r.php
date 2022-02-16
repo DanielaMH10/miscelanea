@@ -21,7 +21,7 @@
    <div class="container">
        <div class="row vh 100 justify-content-center align-items-center">
            <div class="col-auto bg-light p-5">
-               <form class="modificaform" action="anadir.php" onsubmit="return validate(this)">
+               <form method="POST" class="modificaform" action="anadir.php" onsubmit="return validate(this)" >
         	
                    <legend>Añadir Proveedores</legend><br>
                      <div class="form-group">
