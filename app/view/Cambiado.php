@@ -29,7 +29,7 @@
 				<img src="../img/Check.png" alt="Acceso Concedido" width="50%">
 				<legend id="leg1">Se actualizo correctamente <br> <span><?php echo $nombre. " " . $identificacion . "";?></span></legend>
 				<br>
-				<a href="listar_productos.php"><input class="botb" type="button" value="Listado"></a>
+				<a href="listar_proveedores.php"><input class="botb" type="button" value="Listado"></a>
 
 			</p>
 			
@@ -44,7 +44,7 @@
 				<img src="../img/alert.png" alt="Acceso Concedido" width="50%">
 				<legend id="leg2">No se pudo modificar <?php echo mysqli_error($con);?></legend>
 				<br>
-				<a href="listar_productos.php"><input class="botb" type="button" value="Listado"></a>
+				<a href="listar_proveedores.php"><input class="botb" type="button" value="Listado"></a>
 
 			</p>
 			<?php
@@ -57,7 +57,7 @@
 				<img src="img/alert.png" alt="Acceso Concedido" width="50%">
 				<legend id="leg2">Servicio interrumpido</legend>
 				<br>
-				<a href="listar_productos.php"><input class="botb" type="button" value="Listado"></a>
+				<a href="listar_proveedores.php"><input class="botb" type="button" value="Listado"></a>
 
 			</p>
 			<?php
@@ -70,7 +70,7 @@
 				<img src="img/alert.png" alt="Acceso Concedido" width="50%">
 				<legend id="leg2">No se ha indicado el registro a modificar</legend>
 				<br>
-				<a href="listar_productos.php"><input class="botb" type="button" value="Listado"></a>
+				<a href="listar_proveedores.php"><input class="botb" type="button" value="Listado"></a>
 
 			</p>
 			<?php

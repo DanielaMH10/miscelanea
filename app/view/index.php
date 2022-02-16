@@ -1,7 +1,6 @@
 <?php
 include 'app/bd/config.php';
-
-include 'app\bd\conexion.php'; 
+include 'app/bd/conexion.php'; 
 include 'app/view/header.php';
 include 'carrito.php';
 ?>

@@ -20,14 +20,14 @@
 			$consulta = "DELETE FROM proveedores WHERE id_proveedor = '$codigo'";
 			if (mysqli_query($con,$consulta)) {
 
-				echo '<script>alert("el dato ha sido eliminado Satisfactoriamente ' . $codigo . '");</script>';
+				echo "el dato ha sido eliminado Satisfactoriamente";
 			?>	
 			<p class="satis">
 		
-				<img src="../img/Check.png" alt="Acceso Concedido" width="50%">
+				<img src="../img/Check.png" alt="" width="50%">
 				<legend id="leg1">Borrado Satisfactoriamente</legend>
 				<br>
-				<a href="listar_productos.php"><input class="botb" type="button" value="Listado"></a>
+				<a href="listar_proveedores.php"><input class="botb" type="button" value="Listado"></a>
 
 			</p>
 			<?php
@@ -40,7 +40,7 @@
 				<img src="../img/alert.png" alt="Acceso Concedido" width="50%">
 				<legend id="leg2">No se pudo borrar</legend>
 				<br>
-				<a href="listar_productos.php"><input class="botb" type="button" value="Listado"></a>
+				<a href="listar_proveedores.php"><input class="botb" type="button" value="Listado"></a>
 
 			</p>
 			<?php
@@ -53,7 +53,7 @@
 				<img src="../img/alert.png" alt="Acceso Concedido" width="50%">
 				<legend id="leg2">Servicio ininterrumpido</legend>
 				<br>
-				<a href="listar_productos.php"><input class="botb" type="button" value="Listado"></a>
+				<a href="listar_proveedores.php"><input class="botb" type="button" value="Listado"></a>
 
 			</p>
 			<?php

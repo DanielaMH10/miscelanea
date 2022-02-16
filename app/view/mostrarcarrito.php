@@ -1,7 +1,7 @@
 <?php
-include 'app/bd/config.php';
+include '../bd/config.php';
 include 'carrito.php';
-include 'app/view/header.php'
+include '../view/header.php'
 
 
 ?>
@@ -70,4 +70,4 @@ include 'app/view/header.php'
     No hay productos en el carrito
 <?php } ?>
 </div>
-<?php include 'app/view/footer.php' ?>
+<?php include '../view/footer.php' ?>

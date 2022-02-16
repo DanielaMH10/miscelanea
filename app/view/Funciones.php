@@ -35,7 +35,7 @@ function consultar($conexion, $consulta){
 function tabular($datos){
     ?>
     <div class="" id="cuadro2">
-    <p class="titulo" >Control Proveedores <a href="r.html"><input class="btn btn-dark" type="button" value="Añadir"></a></p>
+    <p class="titulo" >Control Proveedores <a href="r.php"><input class="btn btn-dark" type="button" value="Añadir"></a></p>
     <?php
     $codigo =  '<div class="col-auto bg-dark p-5">';
 	$codigo = '<table class="table table-striped" cellpading = "8">';
