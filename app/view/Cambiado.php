@@ -3,10 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style_prin.css">
 	<title>Document</title>
 </head>
 <body>
+<?php
+		include_once 'header.php';
+		include_once 'footer.php';
+
+	?>
 	<?php
 	//incluimos los datos de conexion y las funciones
 	include("Conexion.php");
@@ -14,7 +18,7 @@
 	//Verificamos la presencia del codigo esperado
 	if ( isset($_POST["nomp"] , $_POST["id"], $_POST["tel"],$_POST["dir"])){
 		if ($con = conectarBase($host, $usuario, $clave, $base)) {
-			$mysqli_query($con,"SET NAMES 'UTF-8'");
+			
 			// tarspasamos las variables locales
 			$codigo =$_POST["usecode"];
 			$nombre = $_POST["nomp"];
@@ -24,14 +28,16 @@
 			$consulta = "UPDATE proveedores SET nombre = '$nombre', identificacion = '$identificacion', telefono = '$telefono', direccion = '$direccion' WHERE id_proveedor = '$codigo'";
 			if (mysqli_query($con,$consulta)) {
 			?>	
+			<div class="alerta_satis">
 			<p class="satis">
 		
-				<img src="../img/Check.png" alt="Acceso Concedido" width="50%">
+				<img src="http://localhost/miscelanea/assests/img/feliz.png" alt="Acceso Concedido" width="100px">
 				<legend id="leg1">Se actualizo correctamente <br> <span><?php echo $nombre. " " . $identificacion . "";?></span></legend>
 				<br>
 				<a href="listar_proveedores.php"><input class="botb" type="button" value="Listado"></a>
 
 			</p>
+			</div>
 			
 			<?php
 				
@@ -76,5 +82,15 @@
 			<?php
 			}
 	?>
+		<style>
+		body{
+			text-align: center;
+		}
+		.alerta_satis{
+			display: block;
+			margin: 100px;
+			border: 1px solid #0f0;
+		}
+	</style>
 </body>
 </html>

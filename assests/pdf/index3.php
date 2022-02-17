@@ -1,4 +1,7 @@
+
 <?php
+
+
 require('fpdf/fpdf.php');
 
 class PDF extends FPDF
@@ -7,7 +10,7 @@ class PDF extends FPDF
 function Header()
 {
     // Logo
-    $this->Image('logo.jpeg',10,8,33);
+    $this->Image('logo.png',10,8,33);
     // Arial bold 15
     $this->SetFont('Arial','B',15);
     // Movernos a la derecha
@@ -31,7 +34,7 @@ function Footer()
 }
 
 require 'cn.php';
-$consulta = "SELECT * FROM  proveedor";
+$consulta = "SELECT * FROM  proveedores";
 $resultado = $mysqli->query($consulta);
 
 $pdf = new PDF();
@@ -40,9 +43,11 @@ $pdf->AddPage();
 $pdf->SetFont('Arial','B',16);
 
 while($row = $resultado->fetch_assoc()){
-    $pdf->Cell(30, 10, $row['id_proveedor'], 1, 0, 'c', 0);
-    $pdf->Cell(80, 10, $row['nombre_proveedor'], 1, 0, 'c', 0);
-    $pdf->Cell(50, 10, $row['producto_provee'], 1, 1, 'c', 0);
+    $pdf->Cell(10, 10, $row['id_proveedor'], 1, 0, 'c', 0);
+    $pdf->Cell(30, 10, $row['nombre'], 1, 0, 'c', 0);
+    $pdf->Cell(30, 10, $row['identificacion'], 1, 0, 'c', 0);
+    $pdf->Cell(30, 10, $row['telefono'], 1, 0, 'c', 0);
+    $pdf->Cell(30, 10, $row['direccion'], 1, 1, 'c', 0);
 }
 
 $pdf->Output();
